@@ -1,0 +1,26 @@
+CREATE DATABASE hospital;
+
+USE hospital;
+
+CREATE TABLE patient(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50),
+age INT,
+gender VARCHAR(10),
+disease VARCHAR(50),
+phone VARCHAR(15)
+);
+
+CREATE TABLE doctor(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50),
+specialization VARCHAR(50),
+phone VARCHAR(15)
+);
+
+CREATE TABLE appointment(
+id INT AUTO_INCREMENT PRIMARY KEY,
+patient_name VARCHAR(50),
+doctor_name VARCHAR(50),
+date DATE
+);
